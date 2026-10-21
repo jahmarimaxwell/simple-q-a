@@ -33,18 +33,17 @@ let questions = [
         correctAnswer: "JavaScript"
     }
 
-];
+]
 
 let currentQuestion = 0;
-
 let score = 0;
 
-let questionElement = document.getElementById("question");
+let questionElement = document.querySelector(".question");
 
-let answer1 = document.getElementById("answer1");
-let answer2 = document.getElementById("answer2");
-let answer3 = document.getElementById("answer3");
-let answer4 = document.getElementById("answer4");
+let answer1 = document.querySelector(".answer1");
+let answer2 = document.querySelector(".answer2");
+let answer3 = document.querySelector(".answer3");
+let answer4 = document.querySelector(".answer4");
 
 questionElement.textContent = questions[currentQuestion].question;
 
@@ -52,6 +51,8 @@ answer1.textContent = questions[currentQuestion].answers[0];
 answer2.textContent = questions[currentQuestion].answers[1];
 answer3.textContent = questions[currentQuestion].answers[2];
 answer4.textContent = questions[currentQuestion].answers[3];
+
+let nextButton = document.querySelector(".nextButton");
 
 function checkAnswer(answer) {
 
@@ -75,24 +76,54 @@ function showQuestion() {
 
 }
 
+function highlightAnswer() {
+    
+
+}
+
 nextButton.addEventListener("click", function() {
-    currentQuestion++
-    showQuestion();
+    if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
+        showQuestion();
+    } else {
+        console.log("Quiz Finished!");
+        console.log("Final Score:", score);
+};
 });
 
 answer1.addEventListener("click", function() {
     checkAnswer(answer1.textContent);
-});
+    answer1.style.boxShadow = `
+        0 0 10px rgba(0, 242, 254, 0.5),
+        0 0 30px rgba(0, 242, 254, 0.3),
+        0 0 60px rgba(0, 242, 254, 0.1)
+    `;
+})
 
 answer2.addEventListener("click", function() {
     checkAnswer(answer2.textContent);
+    answer2.style.boxShadow = `
+        0 0 10px rgba(0, 242, 254, 0.5),
+        0 0 30px rgba(0, 242, 254, 0.3),
+        0 0 60px rgba(0, 242, 254, 0.1)
+    `;
 });
 
 answer3.addEventListener("click", function() {
     checkAnswer(answer3.textContent);
+    answer3.style.boxShadow = `
+        0 0 10px rgba(0, 242, 254, 0.5),
+        0 0 30px rgba(0, 242, 254, 0.3),
+        0 0 60px rgba(0, 242, 254, 0.1)
+    `;
 });
 
 answer4.addEventListener("click", function() {
     checkAnswer(answer4.textContent);
+    answer4.style.boxShadow = `
+        0 0 10px rgba(0, 242, 254, 0.5),
+        0 0 30px rgba(0, 242, 254, 0.3),
+        0 0 60px rgba(0, 242, 254, 0.1)
+    `;
 });
 
