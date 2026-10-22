@@ -137,39 +137,4 @@ answerButtons.forEach(button => {
     });
 });
 
-// answer1.addEventListener("click", function() {
-//     checkAnswer(answer1.textContent);
-//     answer1.style.boxShadow = `
-//         0 0 10px rgba(0, 242, 254, 0.5),
-//         0 0 30px rgba(0, 242, 254, 0.3),
-//         0 0 60px rgba(0, 242, 254, 0.1)
-//     `;
-// })
-
-// answer2.addEventListener("click", function() {
-//     checkAnswer(answer2.textContent);
-//     answer2.style.boxShadow = `
-//         0 0 10px rgba(0, 242, 254, 0.5),
-//         0 0 30px rgba(0, 242, 254, 0.3),
-//         0 0 60px rgba(0, 242, 254, 0.1)
-//     `;
-// });
-
-// answer3.addEventListener("click", function() {
-//     checkAnswer(answer3.textContent);
-//     answer3.style.boxShadow = `
-//         0 0 10px rgba(0, 242, 254, 0.5),
-//         0 0 30px rgba(0, 242, 254, 0.3),
-//         0 0 60px rgba(0, 242, 254, 0.1)
-//     `;
-// });
-
-// answer4.addEventListener("click", function() {
-//     checkAnswer(answer4.textContent);
-//     answer4.style.boxShadow = `
-//         0 0 10px rgba(0, 242, 254, 0.5),
-//         0 0 30px rgba(0, 242, 254, 0.3),
-//         0 0 60px rgba(0, 242, 254, 0.1)
-//     `;
-// });
-
+export default question;
