@@ -46,6 +46,12 @@ function App() {
             <h1 className="main-quiz-title">JavaScript Quiz</h1>
 
             <div className="quiz">
+
+                <p className="score">Score: {score}</p>
+                <p className="question-number">
+                    Question {currentQuestion + 1} / {questions.length}
+                </p>
+                
                 <h2 className="question">
                     {currentQuizQuestion.question}
                 </h2>
@@ -82,11 +88,6 @@ function App() {
                         Back
                     </button>
                 </div>
-
-                <p>Score: {score}</p>
-                <p>
-                    Question {currentQuestion + 1} of {questions.length}
-                </p>
             </div>
         </div>
     );

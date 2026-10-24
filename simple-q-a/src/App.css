@@ -32,6 +32,10 @@ body {
     width: 700px;
 }
 
+p {
+  color: white;
+}
+
 .question {
     font-size: 50px;
     text-align: center;
@@ -86,8 +90,4 @@ body {
         0 0 60px rgba(0, 242, 254, 0.1);
 
     border: 1px solid rgba(0, 242, 254, 0.8);
-}
-
-.answer-container button {
-    transition: box-shadow 0.3s ease;
 }
