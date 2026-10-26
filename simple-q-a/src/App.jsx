@@ -47,11 +47,13 @@ function App() {
 
             <div className="quiz">
 
-                <p className="score">Score: {score}</p>
-                <p className="question-number">
-                    Question {currentQuestion + 1} / {questions.length}
-                </p>
-                
+                <div className="counter-section">
+                    <p className="score">Score: {score}</p>
+                    <p className="question-number">
+                        Question {currentQuestion + 1} / {questions.length}
+                    </p>
+                </div>
+
                 <h2 className="question">
                     {currentQuizQuestion.question}
                 </h2>
